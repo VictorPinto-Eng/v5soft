@@ -30,8 +30,8 @@ function ResetPasswordContent() {
             setError(null);
 
             const { error } = await supabase.auth.verifyOtp({
-                token,
-                type: type as any, // "recovery"
+                token_hash: token,
+                type: type as any,
             } as any);
 
             if (error) {
