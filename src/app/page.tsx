@@ -55,6 +55,11 @@ export default function LoginPage() {
         <button className="w-full bg-black text-white p-2 rounded">
           Entrar
         </button>
+        <div className="flex justify-start">
+          <a href="/forgot-password" className="text-sm underline">
+            Esqueceu a senha?
+          </a>
+        </div>
       </form>
     </main>
   );
